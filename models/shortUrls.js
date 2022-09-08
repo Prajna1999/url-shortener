@@ -2,8 +2,9 @@
 import mongoose from "mongoose";
 import shortid from "shortid";
 
+// @constructor shortUrls
 
-export const shortUrlSchema=new mongoose.Schema({
+ const urlSchema=new mongoose.Schema({
     full:{
         type:String,
         required:true
@@ -22,4 +23,4 @@ export const shortUrlSchema=new mongoose.Schema({
 
 })
 
-
+export default mongoose.model('shortUrls', urlSchema);

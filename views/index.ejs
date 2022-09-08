@@ -18,7 +18,6 @@
             <button class="btn btn-success my-2" type="submit">Shrink</button>
             
         </form>
-        
         <table class="table table-striped table-responsive" >
             <thead>
                 <tr>
@@ -29,7 +28,7 @@
             </thead>
             
             <tbody>
-                <% shortUrls.forEach(shortUrl=>{
+                <% ShortUrls.forEach(shortUrl=>{
                         %>
                             <tr>
                                 <td><a href="<%= shortUrl.full %>"><%= shortUrl.full %></a></td>
