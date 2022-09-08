@@ -26,7 +26,7 @@ app.post('/shortUrls' , async (req, res)=>{
 
     res.redirect('/')
 })
-
+//redirect after clicking on short url.
 app.get('/:shortUrl', async(req,res)=>{
     const shortUrl=await shortUrls.findOne({short:req.params.shortUrl})
     if(shortUrl===null) return res.sendStatus(404);
